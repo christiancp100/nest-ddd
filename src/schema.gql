@@ -2,12 +2,12 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-type DeviceType {
+type DeviceDto {
   id: Int!
   name: String!
   type: String!
 }
 
 type Query {
-  findAll: [DeviceType!]!
+  find(id: Int): [DeviceDto!]!
 }

@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 
-import { DeviceModule } from './devices/infrastructure/device.module';
-import { GraphqlModule } from './shared/infrastructure/graphql/graphql.module';
+import { GraphqlModule } from './infra/shared/graphql/graphql.module';
+import { DeviceModule } from './infra/device/device.module';
 
 @Module({
   imports: [GraphqlModule, DeviceModule],
